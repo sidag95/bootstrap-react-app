@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Siddhant Agarwal" />
+    <!-- Import manifest.json -->
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta charset="UTF-8" />
+    <title>KS Trading</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <% if(process.env.NODE_ENV === "production") { %>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"
+    ></script>
+    <% } %>
+  </body>
+  <!-- Prompt a message in the browser if users disabled JS -->
+  <noscript>Your browser does not support JavaScript!</noscript>
+</html>
