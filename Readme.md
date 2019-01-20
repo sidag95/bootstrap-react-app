@@ -1,1 +1,1 @@
-# Website for KS Trading
+# Boilerplate for React mono repo application
