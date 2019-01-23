@@ -1,1 +1,7 @@
-# Boilerplate for React mono repo application
+# Boilerplate for React application
+
+- Webpack
+- Babel
+- Typescript
+- ESlint
+- Prettier
