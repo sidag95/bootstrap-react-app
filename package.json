@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --config webpack.config.prod.js",
     "dev": "webpack-dev-server --open --config webpack.config.dev.js",
-    "test": "jest",
+    "test": "jest --config jest.config.js",
     "format": "pretty-quick",
     "lint": "eslint --fix ./ --ext .js,.ts,.tsx",
     "check-types": "tsc"
@@ -60,6 +60,7 @@
     "source-map-loader": "^0.2.4",
     "style-loader": "^0.23.1",
     "sw-precache-webpack-plugin": "^0.11.5",
+    "ts-jest": "^23.10.5",
     "typescript": "^3.2.4",
     "webpack": "^4.28.4",
     "webpack-bundle-analyzer": "^3.0.3",
@@ -73,7 +74,11 @@
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/config/jest/fileMock.js",
       "\\.(css|less)$": "<rootDir>/config/jest/styleMock.js"
-    }
+    },
+    "testMatch": [
+      "**/__tests__/**/*.(js|ts)?(x)",
+      "**/?(*.)+(spec|test).(ts|js)?(x)"
+    ]
   },
   "husky": {
     "hooks": {
