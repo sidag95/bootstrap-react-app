@@ -1,3 +1,4 @@
 dist
 webpack.*
 node_modules
+coverage
