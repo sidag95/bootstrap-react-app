@@ -18,7 +18,8 @@ const presets = [
 const plugins = [
   "@babel/plugin-syntax-dynamic-import",
   "@babel/plugin-proposal-object-rest-spread",
-  "@babel/plugin-proposal-class-properties"
+  "@babel/plugin-proposal-class-properties",
+  "macros"
 ]
 
 isTest ? plugins.push("babel-plugin-dynamic-import-node") : null

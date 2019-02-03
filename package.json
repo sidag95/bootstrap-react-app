@@ -46,6 +46,7 @@
     "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.5",
     "babel-plugin-dynamic-import-node": "^2.2.0",
+    "babel-plugin-macros": "^2.4.5",
     "copy-webpack-plugin": "^4.6.0",
     "css-loader": "^2.1.0",
     "dom-testing-library": "^3.16.4",
